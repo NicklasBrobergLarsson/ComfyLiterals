@@ -1,4 +1,4 @@
-from .nodes import IntLiteral, FloatLiteral, StringLiteral, CheckpointListLiteral, LoraListLiteral
+from .nodes import IntLiteral, FloatLiteral, StringLiteral, CheckpointListLiteral, DiffusionModelListLiteral, LoraListLiteral
 from .operations import Operation
 from .startup_utils import symlink_web_dir
 
@@ -9,6 +9,7 @@ NODE_CLASS_MAPPINGS = {
     "KepStringLiteral": StringLiteral,
     "Operation": Operation,
     "Checkpoint": CheckpointListLiteral,
+    "DiffusionModel": DiffusionModelListLiteral,
     "Lora": LoraListLiteral,
 }
 
